@@ -8,10 +8,10 @@ Learn any skill—or any tidbit of knowledge (X) in Y minutes. Inspired by [lear
 
 ## Categories
 
-- [Languages](/topics/languages/)
-- [Programming](/topics/programming/)
-- [Instruments](/topics/instruments/)
-- [Crafts](/topics/crafts/)
+- [Languages](./topics/languages/)
+- [Programming](./topics/programming/)
+- [Instruments](./topics/instruments/)
+- [Crafts](./topics/crafts/)
 
 ## How to Contribute
 
