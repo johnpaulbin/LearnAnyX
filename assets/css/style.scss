@@ -150,14 +150,5 @@ audio {
   padding: 2rem 1rem;
 }
 
-/* 2.  Pull the content block into the real center           */
-.wrapper,  /* Dinky’s outer container                */
-.page,     /* inner container used on each markdown page */
-main {     /* fallback for future layouts             */
-  max-width: 800px;      /* keep a readable line‑length */
-  margin: 0 auto;        /* truly center horizontally   */
-  padding: 2rem 1rem;    /* breathing room              */
-}
-
 /* Optional: make headings look balanced once centered */
 h1, h2, h3 { text-align: center; }
