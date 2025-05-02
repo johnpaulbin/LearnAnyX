@@ -143,10 +143,11 @@ audio {
   }
 }
 
-/* 1.  Hide the left‑hand sidebar that Dinky injects */
-.sidebar,             /* classic Jekyll‑Pages selector   */
-#sidebar, .site-nav { /* covers a few other variants     */
-  display: none !important;
+.sidebar, #sidebar, .site-nav { display: none !important; }
+.wrapper, .page, main {
+  max-width: 800px;
+  margin: 0 auto;        /* now centers perfectly */
+  padding: 2rem 1rem;
 }
 
 /* 2.  Pull the content block into the real center           */
