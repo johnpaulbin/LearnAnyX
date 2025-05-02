@@ -4,8 +4,6 @@ layout: default
 
 # Learn Spanish in Y Minutes
 
-[Back to Languages](/topics/languages/)
-
 ## Basic Greetings
 
 - Hola - Hello

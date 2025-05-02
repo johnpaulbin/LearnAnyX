@@ -3,20 +3,96 @@
 
 @import "{{ site.theme }}";
 
-// Custom styles
+/* === LearnAnyX Custom Theme Overrides === */
+
+/* Color palette */
+$primary: #4f46e5; /* indigo‑600 */
+$secondary: #06b6d4; /* cyan‑500 */
+$bg: #f9fafb;       /* gray‑50  */
+$text: #111827;     /* gray‑900 */
+$border: #e5e7eb;   /* gray‑200 */
+
+/* Base typography */
+body {
+  background: $bg;
+  color: $text;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+h1, h2, h3, h4 {
+  color: $primary;
+  font-weight: 600;
+}
+
+/* Layout helpers */
 .main-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
+/* Hero banner */
+.hero {
+  background: $primary;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+}
+
+/* Topic cards */
 .topic-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
+  background: #fff;
+  border: 1px solid $border;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
 }
 
-.topic-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+/* Buttons */
+.button {
+  display: inline-block;
+  background: $secondary;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    background: darken($secondary, 7%);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 }
