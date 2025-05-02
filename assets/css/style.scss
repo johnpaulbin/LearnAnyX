@@ -143,20 +143,36 @@ audio {
   }
 }
 
+/* ───────────────────────────────────────────────
+   1) Hide every sidebar variant Dinky outputs
+─────────────────────────────────────────────── */
 .side-bar,
 .sidebar,
 .sidebar-nav,
 nav.site-nav,
-#sidebar           { display: none !important; }
+#sidebar {
+  display: none !important;
+}
 
-.wrapper, .page, main {
+/* ───────────────────────────────────────────────
+   2) Undo the forced 160 px offset & truly center
+─────────────────────────────────────────────── */
+.wrapper,
+.page,
+main {
   max-width: 800px;
-  margin: 0 auto;        /* now centers perfectly */
-  padding: 2rem 1rem;
+  margin: 0 auto !important;     /* centre horizontally */
+  padding: 2rem 1rem !important; /* keep your breathing room */
+}
+
+@media (min-width: 768px) {
+  .wrapper,
+  .page,
+  main {
+    /* override the theme’s margin‐left:160px */
+    margin-left: 0 !important;
+  }
 }
 
 /* Optional: make headings look balanced once centered */
 h1, h2, h3 { text-align: center; }
-
-/* Dinky’s left rail uses .side‑bar  →  hide it */
-.side-bar { display: none !important; }   /* ← note the hyphen */
