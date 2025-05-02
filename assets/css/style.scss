@@ -143,7 +143,12 @@ audio {
   }
 }
 
-.sidebar, #sidebar, .site-nav { display: none !important; }
+.side-bar,
+.sidebar,
+.sidebar-nav,
+nav.site-nav,
+#sidebar           { display: none !important; }
+
 .wrapper, .page, main {
   max-width: 800px;
   margin: 0 auto;        /* now centers perfectly */
