@@ -152,3 +152,6 @@ audio {
 
 /* Optional: make headings look balanced once centered */
 h1, h2, h3 { text-align: center; }
+
+/* Dinky’s left rail uses .side‑bar  →  hide it */
+.side-bar { display: none !important; }   /* ← note the hyphen */
